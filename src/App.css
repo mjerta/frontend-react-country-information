@@ -1,0 +1,39 @@
+.world-map {
+  height: 400px;
+}
+
+.flag-wrapper {
+  display: flex;
+  max-width:1600px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid;
+}
+
+header {
+  background-image: url("./assets/world_map.png");
+  height:10rem;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.flag {
+  height: 50px;
+  /*width: 150px;*/
+}
+
+.flag-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow:0;
+  padding-right: 5rem;
+}
+
+.above{
+  display: flex;
+
+}
+.below {
+  display: flex;
+}
