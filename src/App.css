@@ -1,39 +1,64 @@
-.world-map {
-  height: 400px;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-basis: 100vw;
+  width: 100vw;
+  justify-content: center;
+}
+
+/*}*/
+
+body {
+  height: 100vh;
 }
 
 .flag-wrapper {
   display: flex;
-  max-width:1600px;
+  flex-basis: 1200px;
+  flex-shrink: 1;
   flex-wrap: wrap;
-  justify-content: center;
+  /*justify-content: center;*/
   flex-direction: column;
   border: 2px solid;
+  /*align-items: center;*/
 }
 
 header {
-  background-image: url("./assets/world_map.png");
-  height:10rem;
   display: flex;
+  flex-basis:40rem;
+  background-image: url("./assets/world_map.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-.flag {
-  height: 50px;
-  /*width: 150px;*/
+  background-position: center;
 }
 
-.flag-box {
+.flag-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem
+}
+
+.box-title {
+  display: flex;
+  justify-content: center;
+}
+
+.box-title-inside {
   display: flex;
   flex-direction: column;
-  flex-grow:0;
-  padding-right: 5rem;
+  & button {
+    padding: 1rem 2rem;
+    align-self: center;
+  }
 }
+@media (min-width: 1200px) {
+  header {
+    /*flex-basis: 100%;*/
 
-.above{
-  display: flex;
-
-}
-.below {
-  display: flex;
+  }
 }

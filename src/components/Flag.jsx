@@ -1,9 +1,18 @@
-function Flag({flagImg, title, population, className}) {
+import React from "react";
+import "./flag.css"
+
+function Flag({flagImg, title, population, className, imgClassName, titleClassName}) {
+  const [loaded,setLoaded] = React.useState(false);
   return (
-    <div className="flag-box">
+    <div className={className}>
       <div className="above">
-        <img className={className} src={flagImg} alt=""/>
-        <h3>{title}</h3>
+        <img
+          className={imgClassName}
+          src={flagImg} alt=""
+          style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}
+          onLoad={() => setLoaded(true)}
+        />
+        <h3 className={titleClassName}>{title}</h3>
       </div>
       <div className="below">
         <p>Has a population of {population} people.</p>

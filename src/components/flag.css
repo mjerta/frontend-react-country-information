@@ -1,0 +1,46 @@
+/*Africa: blauw*/
+/*Americas: groen*/
+/*Asia: rood*/
+/*Europe: geel*/
+/*Oceania: paars*/
+
+.africa {
+  color: blue;
+}
+
+.america {
+  color: green;
+}
+
+.asia {
+  color: red;
+}
+
+.europe {
+  color: yellow;
+}
+
+.flag {
+  height: 50px;
+  width: 100px;
+}
+
+.flag-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem 1rem 1rem 1rem;
+  flex-basis: 300px;
+  background-color: grey;
+  max-height: calc((388 / 16) * 1rem);
+  /*border: 1px solid*/
+}
+
+.above {
+  display: flex;
+
+}
+
+.below {
+  display: flex;
+}
