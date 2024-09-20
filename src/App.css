@@ -11,8 +11,6 @@
   justify-content: center;
 }
 
-/*}*/
-
 body {
   height: 100vh;
 }
@@ -22,7 +20,6 @@ body {
   flex-basis: 1200px;
   flex-shrink: 1;
   flex-wrap: wrap;
-  /*justify-content: center;*/
   flex-direction: column;
 }
 
@@ -57,11 +54,5 @@ header {
   & button {
     padding: 1rem 2rem;
     align-self: center;
-  }
-}
-@media (min-width: 1200px) {
-  header {
-    /*flex-basis: 100%;*/
-
   }
 }
