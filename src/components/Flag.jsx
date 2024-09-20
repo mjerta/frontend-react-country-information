@@ -1,7 +1,7 @@
 import React from "react";
 import "./flag.css"
 
-function Flag({flagImg, title, population, className, imgClassName, titleClassName}) {
+function Flag({flagImg, title, population, className, imgClassName, titleClassName, populationClassName}) {
   const [loaded,setLoaded] = React.useState(false);
   return (
     <div className={className}>
@@ -12,10 +12,10 @@ function Flag({flagImg, title, population, className, imgClassName, titleClassNa
           style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}
           onLoad={() => setLoaded(true)}
         />
-        <h3 className={titleClassName}>{title}</h3>
+        <p className={titleClassName}>{title}</p>
       </div>
       <div className="below">
-        <p>Has a population of {population} people.</p>
+        <p>Has a population of <span className={populationClassName}>{population}</span> people.</p>
       </div>
     </div>
   )

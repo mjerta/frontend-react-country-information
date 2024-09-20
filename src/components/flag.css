@@ -1,9 +1,3 @@
-/*Africa: blauw*/
-/*Americas: groen*/
-/*Asia: rood*/
-/*Europe: geel*/
-/*Oceania: paars*/
-
 .africa {
   color: blue;
 }
@@ -20,9 +14,27 @@
   color: yellow;
 }
 
+.oceania {
+  color: purple;
+}
+
+.antarctica {
+  color: darkblue;
+}
+
 .flag {
   height: 50px;
   width: 100px;
+  margin-right: .3rem;
+}
+
+.population {
+  font-weight: bold;
+}
+
+.flag-title {
+  font-size: 1.3rem;
+  font-weight:600;
 }
 
 .flag-box {
@@ -31,16 +43,16 @@
   flex-grow: 1;
   padding: 1rem 1rem 1rem 1rem;
   flex-basis: 300px;
-  background-color: grey;
+  background-color: #a1af9a;
   max-height: calc((388 / 16) * 1rem);
-  /*border: 1px solid*/
 }
 
 .above {
   display: flex;
 
 }
-
 .below {
+  padding-top: .5rem;
   display: flex;
+  font-style: italic ;
 }
