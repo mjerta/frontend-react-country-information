@@ -1,0 +1,40 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: green;
+}
+
+ul {
+  list-style-type: none;
+  flex-basis: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.default-menu-link {
+  border: none;
+}
+
+.active-menu-link{
+  border-bottom: 2px solid black;
+}
