@@ -17,13 +17,15 @@ const useCountryInformation = () => {
 
       if (responseObject.borders && responseObject.borders.length > 0) {
         const codes = responseObject.borders.join(",");
-        const responseExtra = await axios.get(`https://restcountries.com/v3.1/alpha `, {
-          codes: codes
+        const responseExtra = await axios.get(`https://restcountries.com/v3.1/alpha`, {
+          params: {
+            codes: codes
+          }
         });
         setNeigbourCountries(responseExtra.data);
       }
     } catch (e) {
-      setError(e.message || "Something went wrong.");
+      setError(e);
     } finally {
       setLoading(false);
     }
