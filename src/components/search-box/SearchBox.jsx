@@ -1,12 +1,12 @@
 import "./SearchBox.css"
+
 function SearchBox({handleOnClick, handleOnChange}) {
 
-
   return (
-    <div className="search-box">
-      <input onChange={handleOnChange}  type="text"/>
-      <button onClick={handleOnClick}>Search</button>
-    </div>
+    <form onSubmit={handleOnClick} className="search-box">
+      <input onChange={handleOnChange} type="text"/>
+      <button type={"submit"}>Search</button>
+    </form>
 
   )
 }

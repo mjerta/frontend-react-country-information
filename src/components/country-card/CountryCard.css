@@ -1,6 +1,6 @@
 .country-card {
   padding: 1rem;
-  border: 1px solid red;
+  border: 1px solid black;
   flex-basis: 10rem;
   align-self: center;
   width: 25rem;
@@ -25,7 +25,6 @@
 
 
 .country-card-above-img {
-  background-color: red;
   height: 2.5rem;
   width: 4rem;
 }

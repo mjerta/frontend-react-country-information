@@ -1,5 +1,6 @@
 import Flag from "../../components/flag/Flag.jsx";
 import useFetch from "../../custom-hooks/useFetch.js";
+import "./WorldFlags.css"
 
 function WorldFlags() {
 
@@ -11,7 +12,7 @@ function WorldFlags() {
   return (
     <>
       <header>
-        <div className="header-image"></div>
+        <div className="image-worldflag header-image"></div>
       </header>
       <div className="box-title">
         <div className="box-title-inside">
@@ -41,7 +42,7 @@ function WorldFlags() {
           )
           :
           (
-            <h1>Loading</h1>
+            <h1 className="center-header">Loading</h1>
           )
       }
     </>
