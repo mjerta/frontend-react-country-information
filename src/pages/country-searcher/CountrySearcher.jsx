@@ -8,6 +8,7 @@ import Error from "../../components/error/Error.jsx";
 function CountrySearcher() {
 
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchTermConfirmed, setSearchTermConfirmed] = useState("");
   const [countryData, setCountryData] = useState(null);
   const [neigbourCountries, setNeigbourCountries] = useState([]);
   const [error, setError] = useState("");
@@ -38,11 +39,12 @@ function CountrySearcher() {
 
   function handleOnClick(e) {
     console.log(e)
-    void fetchCountryInformation(searchTerm);
+    setSearchTermConfirmed(searchTerm);
+    void fetchCountryInformation(searchTermConfirmed);
   }
 
   function handleOnChange(e) {
-    setSearchTerm(e.target.value)
+      setSearchTerm(e.target.value)
   }
 
   return (
@@ -54,7 +56,7 @@ function CountrySearcher() {
       />
       {error &&
         <Error
-          searchTerm={searchTerm}
+          searchTerm={searchTermConfirmed}
           error={error}
         />}
       {

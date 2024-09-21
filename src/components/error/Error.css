@@ -1,8 +1,12 @@
 .error-box {
   align-self: center;
   display: flex;
-
-  width: 10rem;
-  border: 1px solid red;
+  width: 25rem;
+  /*border: 1px solid red;*/
   padding: 1rem;
+  border-radius: .5rem;
+
+  & p:first-letter {
+    text-transform: uppercase;
+  }
 }
