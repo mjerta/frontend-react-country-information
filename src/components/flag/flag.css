@@ -1,0 +1,58 @@
+.africa {
+  color: blue;
+}
+
+.america {
+  color: green;
+}
+
+.asia {
+  color: red;
+}
+
+.europe {
+  color: yellow;
+}
+
+.oceania {
+  color: purple;
+}
+
+.antarctica {
+  color: darkblue;
+}
+
+.flag {
+  height: 50px;
+  width: 100px;
+  margin-right: .3rem;
+}
+
+.population {
+  font-weight: bold;
+}
+
+.flag-title {
+  font-size: 1.3rem;
+  font-weight:600;
+}
+
+.flag-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem 1rem 1rem 1rem;
+  flex-basis: 300px;
+  background-color: #a1af9a;
+  max-height: calc((388 / 16) * 1rem);
+}
+
+.above {
+  display: flex;
+
+}
+.below {
+  padding-top: .5rem;
+  display: flex;
+  font-style: italic ;
+}

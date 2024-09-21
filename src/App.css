@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-basis: 100vw;
+  width: 100vw;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.flag-wrapper {
+  display: flex;
+  flex-basis: 1200px;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+header {
+  font-size: clamp(8px, 2.66vw, 16px);
+  display: flex;
+  flex-basis:30em;
+}
+
+.header-image {
+  flex-basis: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flag-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem
+}
+
+.center-header {
+  text-align: center;
+}

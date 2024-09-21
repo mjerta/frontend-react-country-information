@@ -1,0 +1,12 @@
+.countrysearcher-image {
+  background-image: url("../../assets/spinning-earth.jpg");
+}
+
+.searchbox-card {
+  flex-direction: column;
+  display: flex;
+
+  & > * {
+    margin-bottom: 2rem;
+  }
+}
