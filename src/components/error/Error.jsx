@@ -15,7 +15,6 @@ function Error({error, searchTerm}) {
 
   return (
     <div className="error-box">
-      {console.log(statusErrors)}
       {statusErrors === 404 ? (
         <p>{searchTerm} bestaat niet. Probeer het opnieuw</p>
       ) : (

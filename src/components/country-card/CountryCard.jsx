@@ -9,9 +9,6 @@ function CountryCard({
                        population,
                        neigbouringCountry
                      }) {
-
-  console.log(capital)
-
   return (
     <div className={"country-card"}>
       <div className={"country-card-heading"}>

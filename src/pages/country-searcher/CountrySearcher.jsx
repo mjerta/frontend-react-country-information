@@ -33,7 +33,6 @@ function CountrySearcher() {
 
   return (
     <>
-      {console.log(countryData)}
       <header>
         <div className="countrysearcher-image header-image"></div>
       </header>

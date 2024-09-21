@@ -15,9 +15,8 @@ function useFetch(url, params) {
           params
         });
         setFlagData(response.data.sort((a, b) => a.population - b.population));
-        console.log(response);
       } catch (error) {
-        console.log(error);
+        console.error(error);
         setError(error.message);
       } finally {
         setLoading(false)
